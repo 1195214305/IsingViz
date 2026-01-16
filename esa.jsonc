@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "assets": {
+    "directory": "frontend/dist"
+  },
+  "functions": {
+    "directory": "functions"
+  },
+  "routes": [
+    {
+      "pattern": "/api/chat",
+      "function": "api/chat"
+    },
+    {
+      "pattern": "/api/compute",
+      "function": "api/compute"
+    }
+  ]
+}

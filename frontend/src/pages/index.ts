@@ -1,0 +1,7 @@
+export { HomePage } from './HomePage'
+export { IsingPage } from './IsingPage'
+export { QUBOPage } from './QUBOPage'
+export { SATPage } from './SATPage'
+export { DGPage } from './DGPage'
+export { AnnealingPage } from './AnnealingPage'
+export { GWLPage } from './GWLPage'
