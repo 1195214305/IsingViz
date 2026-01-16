@@ -29,10 +29,19 @@ export function DGPage() {
     const allStates = enumerateAllStates(config)
 
     // 查找局部极小值
-    const localMinima = findLocalMinima(allStates, size)
+    const localMinima = findLocalMinima(allStates)
 
     // 查找鞍点
     const saddlePoints = findSaddlePoints(localMinima, allStates, size)
+
+    // 防止空数组导致错误
+    if (localMinima.length === 0) {
+      setMinima([])
+      setSaddles([])
+      setStats(null)
+      setComputing(false)
+      return
+    }
 
     // 计算统计信息
     const globalMin = Math.min(...localMinima.map(m => m.energy))
