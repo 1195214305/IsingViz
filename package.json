@@ -1,0 +1,9 @@
+{
+  "name": "isingviz-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:frontend": "cd frontend && npm install",
+    "build": "cd frontend && npm install && npm run build"
+  }
+}
